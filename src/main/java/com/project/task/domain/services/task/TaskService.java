@@ -48,4 +48,9 @@ public class TaskService implements TaskInterface  {
         return taskRepository.save(task);
 
     }
+
+    @Override
+    public void deleteTask(UUID taskId) {
+        taskRepository.deleteById(taskId);
+    }
 }

@@ -58,6 +58,17 @@ public class TaskController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ApiResponse("failed to fetched", null));
         }
     }
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<ApiResponse> createTsk(@PathVariable UUID id) {
+        try{
+            taskService.deleteTask(id);
+            return ResponseEntity.ok().body(new ApiResponse("success",null));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ApiResponse("failed to fetched", null));
+        }
+    }
+
+
 
 
 

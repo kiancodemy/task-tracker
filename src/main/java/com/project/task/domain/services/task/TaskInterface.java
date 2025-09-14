@@ -14,4 +14,5 @@ public interface TaskInterface {
     Task createTask(UUID TaskListId, CreateTask createTask);
 
     Task createNewTask(TaskList taskList, CreateTask createTask);
+    void deleteTask(UUID taskId);
 }
