@@ -33,9 +33,11 @@ public class Task {
     private LocalDateTime dueDate;
 
     @Column(name="status",nullable = false)
+    @Enumerated(EnumType.STRING)
     private TaskStatus status;
 
     @Column(name="priority",nullable = false)
+    @Enumerated(EnumType.STRING)
     private TaskPriority taskPriority;
 
     @Column(name="created",nullable = false)
