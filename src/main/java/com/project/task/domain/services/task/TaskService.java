@@ -36,12 +36,12 @@ public class TaskService implements TaskInterface  {
     }
 
     @Override
-    public Task createNewTask(TaskList taskList, CreateTask createTask) {
+    public Task createNewTask(TaskList tasklist, CreateTask createTask) {
         Task task = new Task();
         LocalDateTime localDateTime = LocalDateTime.now();
         task.setCreated(localDateTime);
         task.setUpdated(localDateTime);
-        task.setTaskList(taskList);
+        task.setTasklist(tasklist);
         task.setStatus(createTask.status());
         task.setDueDate(createTask.dueDate());
         task.setDescription(createTask.description());

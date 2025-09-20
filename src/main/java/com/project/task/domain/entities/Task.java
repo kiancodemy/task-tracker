@@ -50,8 +50,8 @@ public class Task {
 
     @ManyToOne
     @JsonIgnore
-    @JoinColumn(nullable = false,name="task-list-id",referencedColumnName = "id")
-    private TaskList taskList;
+    @JoinColumn(name="task-list-id",referencedColumnName = "id")
+    private TaskList tasklist;
 
 
 }
