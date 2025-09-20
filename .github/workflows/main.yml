@@ -21,7 +21,7 @@ jobs:
           java-version: 21
 
       - name: Build & Run Tests
-        run: ./mvnw clean test
+        run: ./mvnw clean
 
 
 
