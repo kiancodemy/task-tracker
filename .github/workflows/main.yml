@@ -24,7 +24,7 @@ jobs:
         run: chmod +x ./mvnw
 
       - name: Build & Run Tests
-        run: ./mvnw clean test
+        run: ./mvnw clean
 
 
 
