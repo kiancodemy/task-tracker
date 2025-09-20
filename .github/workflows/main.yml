@@ -9,5 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run: echo "kirrr78 khar joon yes and now "
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: java sdk setup
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Make Maven Wrapper Executable
+        run: chmod +x ./mvnw
+
+      - name: Clean Project
+        run: ./mvnw clean verify
+
