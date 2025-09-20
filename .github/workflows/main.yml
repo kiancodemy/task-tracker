@@ -20,6 +20,6 @@ jobs:
       - name: Make Maven Wrapper Executable
         run: chmod +x ./mvnw
 
-      - name: Clean Projectssssss
+      - name: Cleaner
         run: ./mvnw clean
 
