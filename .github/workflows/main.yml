@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        run: echo "kirrr khar joon "
+        run: echo "kirrr khar joon yes and now "
